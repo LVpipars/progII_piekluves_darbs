@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+
+
+{% block contents %}
+{% for izdevumi in data %}
+
+<div class="container">
+
+    <div class="card">
+        <p>{{ izdevumi[2]}}</p>
+        <p class="title">{{ izdevumi[1] }}</p>
+    </div>
+</div>
+
+
+{% endfor %}
+{% endblock %}

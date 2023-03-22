@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izdevumi</title>
+    <link href="static/stylesheet/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="pamats">
+        <div class="saturs">
+
+        <!-- mekletajs -->
+
+        <form action="" class="mekletajs">
+            <input type="text" placeholder="Meklē dienu dd/mm/yyyy" name="q" >
+            <button type="submit"><img src="static/stylesheet/atteli/lupa.png" class="lupa"></button>
+        </form>
+    
+        <!-- navigacijas linija -->
+
+        <div class="navigacijasLinija">
+            <nav>
+                <ul>
+                <li><a href="/parskats">Mēneša pārskats</a></li>
+                <li><a href="/ievade">Jaunu izdevumu pievienošana</a></li>
+                <li><a href="/visi_dati">Visu tēriņu apskats</a></li>
+                </ul>
+            </nav>
+        </div>
+
+         <!-- satura logs -->
+
+        <div class="saturss">
+            {% block contents %}
+
+            {% endblock %}
+        </div>
+        </div>
+
+        <!-- Kajene -->
+
+        <div class="footer">
+            <div class="saturs">
+                <div class="row">
+                    <div class="footer-1">
+                        <h3>Mājaslapu veidoja: Kristaps Verečinskis</h3>
+                    </div>
+                    <div class="footer-2">
+                        <h3>Šī mājaslapa tika izveidota izmantojot Flask</h3>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="static/stylesheet/script.js"></script>
+</body>
+</html>

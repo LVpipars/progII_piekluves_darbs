@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+.pamats{
+    height: 150vh;
+    width: 100%;
+    background-color: 	#fbb5df;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.saturs{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+/* navigacijsjosla */
+
+.navigacijasLinija{
+    width: 70%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between;
+}
+
+
+
+nav{
+    background-color: #fff;
+    border-radius: 50px;
+    flex:1;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    padding: 13px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s ;
+}
+
+nav ul li::after{
+    content: '';
+    background: #f44566;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+nav ul li a{
+    color: rgb(132, 23, 165);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+nav ul li :hover{
+    color: #fff;
+}
+
+
+
+/*saturs*/
+
+.saturss{
+   padding-top: 10px;
+   padding-bottom: 10px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 25px;
+    flex: 1;
+}
+
+.saturss ul{
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.saturs li{
+
+    color: #f15270;
+}
+
+.saturss h4{
+    padding-bottom: 20px;
+}
+
+.sveiciens{
+    width: 60%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.saturss h2{
+    color: #f15270;
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.saturss p{
+    color: #f15270;
+}
+.saturs h3{
+    color: #f44566;
+    font-size: 25px;
+}
+
+
+/*mekletajs*/
+
+
+.mekletajs{
+    width: 100%;
+    max-width: 200px;
+    background:  #61064d;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px 10px;
+
+}
+
+.mekletajs input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px 10px;
+    font-size: 16px;
+    color: #ff0000;
+
+}
+
+::placeholder{
+    color:  #ff0000;;
+    width: 200px;
+}
+
+.mekletajs button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 30px;
+    background: #f15270;
+    cursor: pointer;
+}
+
+.lupa{
+    width: 10px;
+}
+
+
+
+/*kajene*/
+
+
+.footer{
+    background: rgb(71, 19, 51);
+    color: transparent;
+    font-size: 15px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: azure;
+    margin-bottom: 18px;
+    padding: 8px;
+}
+
+.footer-1, .footer-2, .footer-3{
+    min-width: 240px;
+    margin-bottom: 20px;
+}
+
+.footer-3 ul li a{
+    list-style-type: none;
+    padding-left: 20px;
+    cursor: pointer;
+    padding-bottom: 3px;
+    color: hotpink;
+}
+
+/* datu ievade */
+
+
+
+.force-control {
+    margin-top: 30px;
+    background-color: #61064d;
+    border-radius: 15px;
+    border: 0;
+    box-sizing: border-box;
+    color: #d80a0a;
+    font-size: 18px;
+    height: 75px;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 85%;
+
+}
+
+
+.apstiprinat{
+	appearance: none;
+	border: none;
+	font-size: inherit;
+	border-radius: 2em;
+	padding: 0.75em 1em;
+	background: #61064d;
+	color: #d80a0a;
+	display: inline-flex;
+	align-items: center;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 85%;
+    margin-bottom: 50px;
+
+}
+
+.info{
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 50px;
+}
+
+/* kartiņas dizains */
+
+.card {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 0,5rem;
+    box-shadow: 0 -0.5rem 1rem rgba(0 0 0 / 0.15);
+    border-radius: 4px;
+    width: 75%;
+    justify-content: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #f0cae1;
+}
+  
+.container {
+    width: 1200px !important;
+    padding: 0 !important;
+    margin-top: 15px;
+    margin-right: 20%;
+    margin-left: 20%;
+}  

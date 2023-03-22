@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block contents %}
+
+<h2> Ievadīt datus un apstiprināt, lai pievienotu jaunus izdevumus</h2>
+
+<form action="/ievade" method="post", class="ivades-forma", enctype="multipart/form-data">
+        <p class="info">Lai atvertu kalendāru uzspiedie atstarpes taustiņu</p>
+    <input class="force-control" 
+            type="date" 
+            name="datums" 
+            id="datums_id"
+            placeholder="datums"
+            value="Uzspiediet atstarpes tautiņu, lai atvērtu kalendāru">
+    <input class="force-control" 
+            type="text" 
+            name="izdevumi" 
+            id="izdevumi_id"
+            placeholder="izdevumu summa">
+        <p class="info"> datus ir iespējams saglabāt bez čeka attēla</p>
+      <input class="force-control" 
+            type="file"
+            name="cheks"
+            id="cheks_id"
+            placeholder="čeks"> 
+    <input type="submit", name="saglabat", class="apstiprinat">     
+</form>
+
+{% endblock %}
